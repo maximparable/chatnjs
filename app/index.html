@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+
+<head>
+	
+	<meta charset="utf-8">
+	<title>chat socket</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/ico" href="images/favicon.ico">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Dosis:400,500,600,700" rel="stylesheet" type="text/css">
+
+	<!-- CSS Files -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+	<link rel="stylesheet" href="css/responsive.css">
+
+	
+</head>
+<body>
+	<br><br><br><br><br><br><br>
+	<div class="container">
+		<div class="row" style="vertical-align: middle !important">
+			<div class="panel panel-info pb-chat-panel">
+				<div class="panel panel-heading pb-chat-panel-heading">
+					<div class="row">
+						<div class="col-xs-12">
+							<a href="#">
+								<label id="support_label">Chat NodeJS</label>
+							</a>
+							<a href="#"><span class="fa fa-cog pull-right pb-chat-top-icons"></span></a>
+						</div>
+					</div>
+				</div>
+				<div class="panel-body">
+					<form id="mychat" action="#" method="post" enctype="multipart/form-data">
+						<!-- -->
+					</form>
+				</div>
+				<div class="panel-footer">
+					<div class="row">
+						<p id="estado"></p>
+					</div>
+					<div class="row">
+						<div class="col-xs-5">
+							<input id="username" class="form-control pb-chat-textarea" placeholder="Tu nombre.">
+						</div>
+						<div class="col-xs-10">
+							<input id="message" class="form-control pb-chat-textarea" placeholder="">
+						</div>
+						<div class="col-xs-2 pb-btn-circle-div">
+							<button id="send" class="btn btn-primary btn-circle pb-chat-btn-circle">
+								<span class="fa fa-chevron-right"></span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Javascript Files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="/socket.io/socket.io.js" charset="utf-8"></script>
+	<script src="js/scripts.js" charset="utf-8"></script>
+</body>
+</html>
