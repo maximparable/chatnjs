@@ -1,2 +1,0 @@
-# chatnjs
-chat
